@@ -113,7 +113,20 @@ as invalid and refuse operation.
     // Implementations can use this value to set the default location. If the
     // value is null, implementations may use their own algorithm for
     // determining a default location.
-    "center": [ -76.275329586789, 39.153492567373, 8 ]
+    "center": [ -76.275329586789, 39.153492567373, 8 ],
+    
+    // OPTIONAL, Default: null.
+    // Some implementations might allow you to specify a query to determine
+    // the data displayed on the tiles. Diffent query languajes are implemented
+    // by different providers. For example: cartodb-sql, ftables-sql, etc.
+    "querylanguaje": "particular-sql",
+    
+    // OPTIONAL, Default: null.
+    // Some implementations might allow you to specify a style to determine
+    // the apparence of the tiles. Diffent style languajes are implemented
+    // by different providers. For example: carto, sld, mapnikstyle...
+    "stylelanguaje": "carto"  
+    
 }
 ```
 
